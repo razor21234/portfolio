@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfilio</title>
+    <link rel="stylesheet" href="assets/css/mystyle.css">
+    <link rel="stylesheet" href="assets/css/mediascreen.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+</head>
+<body>
+    <nav id="top-navbar" class="p-4">
+        <div> [/ RazorsPro KodeGeek]</div>
+       
+         <div class="d-flex p-4">
+                    <li><a  onclick="showPage('home')">Home</a></li>
+                    <li><a  onclick="showPage('about')">About</a></li>
+                    <li><a  onclick="showPage('fb')">Services</a></li>
+                    <li><a  onclick="showPage('app')">Apps</a></li>
+                     <li><a  onclick="showPage('fb')">Contact</a></li>
+        </div>
+
+        
+    </nav>
+      <div class="d-flex" id="main-content">
+            <aside id="left-sidebar" class="p-4">
+            <nav>
+                <ul>
+                    <li><a><i class='fa fa-github'></i></a></li>
+                    <li><a><i class='fa fa-envelope'></i></a></li>
+                    <li><a><i class='fa fa-facebook'></i></a></li>
+                </ul>
+            </nav>
+            </aside>
+
+            <div class="row main p-4">
+               <div class="col-lg-6 content" id="homePage">
+                <h2>Hello !, I'm Razel</h2>
+                <div class="d-flex" style="gap:20px">
+                    <h1 class="cursor">></h1>
+                    <h1 class="typing-animation">Web Developer..</h1></div>
+                <p>Passionate about creating dynamic web applications and modern designs using Laravel framework.</p>
+                <hr>
+                <button class="btn border"><i class="fa fa-cloud-download"></i> Download CV</button>
+                <button class="btn btn-dark text-white" onclick="showPage('tech')"><i class="fa fa-file-code-o"></i> Stacks</button>
+             
+               </div>
+
+               <div class="col-lg-6 content zoomIn" id="aboutPage" style="display:none;">
+                <h1 >Hey!, glad your here.</h1>
+                 <hr>
+               <p>Hi, Im John Razel Saavedra also known as Razel, I am based in Iloilo City, Philippines.
+               I completed my BS degree on Information Technology last 2019. Other than that, I also take another short skill course in TESDA for Electrical Installation & Maintenance NC II. I work as IT personnel for few years but my passion in web development is always in my mind. Creating modern web design and APIs gives hapiness in me.</p>
+
+               </div>
+
+                <div class="col-lg-6 content zoomIn" id="appPage" style="display:none;">
+                <h1 >App List</h1>
+                 <hr>
+                    <div class="d-flex">
+                   <div class="row" id="gallery">
+                   <div class="col-lg-8 border">
+                       <a href="https://galaph.cloud/signup" target="_blank"><img src="assets/images/galaph.jpg"></a>
+                   </div>
+                   <div class="col-lg-4 ">
+                      <p>Galaph is my Capstone Project during my bootcamp. It is booking website designed to
+                        select your desired places to stay in and also allow to list your property to maximize your business
+                        target and earn online.
+
+                      </p>
+                   </div>
+                   </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 content zoomIn" id="techPage" style="display:none;">
+                <h1>Web-Stacks</h1>
+                <hr>
+               <div id="web-stacksimg">
+                <img src="assets/images/htcsjs.png">
+                 <img src="assets/images/php.png">
+                  <img src="assets/images/laravel.png">
+                  <img src="assets/images/mysql.png">
+                  <img src="assets/images/xampp.png">
+               </div>
+               </div>
+
+               <div class="col-lg-6 hero">
+               <img src="assets/images/me.png" class="">
+               <!-- <div id="frame"></div> -->
+               </div>
+
+            </div>
+
+ 
+      
+   </div>
+            
+</body>
+<script type="text/javascript">
+    
+        function showPage(page) {
+            var pages = document.getElementsByClassName('content');
+            for (var i = 0; i < pages.length; i++) {
+                pages[i].style.display = 'none';
+            }
+            document.getElementById(page + 'Page').style.display = 'block';
+        }
+    </script>
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="assets/js/myjs.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</html>

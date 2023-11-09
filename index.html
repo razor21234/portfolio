@@ -14,10 +14,10 @@
 <body>
     <nav id="top-navbar" class="p-4">
         <div class="d-flex p-4 socmed">  
-                    <li><a><i class='fa fa-github'></i></a></li>
-                    <li><a><i class='fa fa-envelope'></i></a></li>
-                    <li><a><i class='fa fa-facebook'></i></a></li>
-                     <li><a><i class='fa fa-linkedin'></i></a></li>
+                    <li><a target="_blank" href="https://github.com/razor21234"><i class='fa fa-github'></i></a></li>
+                    <li><a target="_blank" href="mailto:johnrazelsaavedra21@gmail.com"><i class='fa fa-envelope'></i></a></li>
+                    <li><a target="_blank" href="https://www.facebook.com/johnrazel.saavedra?mibextid=ZbWKwL"><i class='fa fa-facebook'></i></a></li>
+                     <li><a target="_blank" href="https://www.linkedin.com/in/john-razel-saavedra-4b4224187"><i class='fa fa-linkedin'></i></a></li>
                
         </div>
        
@@ -52,7 +52,7 @@
                     <h1 class="typing-animation">Web Developer..</h1></div>
                 <p>Passionate about creating dynamic web applications and modern designs using Laravel framework.</p>
                 <hr>
-                <button class="btn dl border"><i class="fa fa-cloud-download"></i> Download CV</button>
+                <button class="btn dl border" id="downloadButton"><i class="fa fa-cloud-download"></i> Download Resume</button>
                 <!-- <button class="btn btn-dark text-white" onclick="showPage('tech')"><i class="fa fa-file-code-o"></i> Stacks</button> -->
                 <br>
              <div id="web-stacksimg">
@@ -101,7 +101,7 @@
                        <a href="https://galaph.cloud/signup" target="_blank"><img src="assets/images/galaphabout.PNG" alt="galaphabout.PNGg">
                         <div class="overlay">
                        <h3>Capstone Project a Booking Website</h3>
-                      
+
                         </div>
                        </a>
                         
@@ -177,6 +177,17 @@
         }
     </script>
 </script>
+  <script>
+        document.getElementById('downloadButton').addEventListener('click', function() {
+            var a = document.createElement('a');
+            a.href = 'https://drive.google.com/file/d/1NRHHKqoIm18IHvMI_rPe_xn7NTU4m9vb/view?usp=sharing'; // Replace with the actual path to your resume
+            a.target="_blank";
+            a.download = 'razelresume.pdf'; // The filename to be used when downloaded
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+        });
+    </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="assets/js/myjs.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

@@ -242,12 +242,20 @@ h1{
 }
 #hello{
     height: 150px;
+    width: 150px;
+    display: none;
+    position: absolute;
+    margin-top: -50px;
+    right:-90px;
 }
 .robot{
     height: 400px !important;
     width: 400px !important;
+    cursor: pointer;
 }
-
+.robot:hover + #hello{
+display: block;
+}
 .typing-animation {
   display: inline-block;
   overflow: hidden;

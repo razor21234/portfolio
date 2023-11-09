@@ -112,6 +112,9 @@ overflow-x: hidden;
 .parentcontainer{
       position: relative;
 }
+
+
+
 .parentcontainer:hover .overlay {
             opacity: 1;
         }
@@ -128,6 +131,16 @@ overflow-x: hidden;
             display: flex;
             justify-content: center;
             align-items: center;
+        }
+        .hoverme{
+            position: absolute;
+            top: 75%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 10px;
+            font-size: 18px;
+            text-align: center;
         }
 aside nav ul{
  display: flex;

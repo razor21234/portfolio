@@ -240,6 +240,13 @@ h1{
         transform:scale(1);
   }
 }
+#hello{
+    height: 150px;
+}
+.robot{
+    height: 400px !important;
+    width: 400px !important;
+}
 
 .typing-animation {
   display: inline-block;

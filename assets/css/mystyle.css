@@ -37,23 +37,28 @@ overflow-x: hidden;
     z-index: -9;
     height: 100vh;
     padding-left: 120px;
-     padding-right: 120px;
+    padding-right: 120px;
+}
+.content{
+    align-items: center;
 }
 #top-navbar{
     width: 100%;
     height: 5vh;
-    background: #eee;
+    background: #2E4374;
 /*    opacity: .2;*/
-    border-bottom: 5px solid orange;
+    border-bottom: 5px solid #ccc;
     color: #333;
     display: flex;
     align-items: center;
     position: fixed;
     top:0;
+    flex-direction: row-reverse;
 
-    justify-content: space-around;
+/*    justify-content: space-around;*/
 
 }
+
 #top-navbar div{
    list-style: none;
    gap: 20px;
@@ -61,7 +66,9 @@ overflow-x: hidden;
 
 
 }
-
+.links{
+    color: #fff;
+}
 
 #left-sidebar{
     height: 100%;
@@ -73,6 +80,12 @@ overflow-x: hidden;
     height: 100%;
     width: 100%;
 }
+.dl:hover{
+    background: orange;
+   color: white !important;
+    transform: scale(1.2);
+
+}
 aside nav ul{
  display: flex;
  flex-direction: column;
@@ -83,6 +96,10 @@ text-align: center;
 width: 100px;
 
 
+}
+.socmed li a{
+font-size: 24pt;
+color: #fff !important;
 }
 div li:hover{
     transform: scale(1.2);
@@ -106,28 +123,37 @@ ul li a i{
  
 /*    text-align: center;*/
 }
-img{
-    height: 70%;
-    width: 70%;
-    max-width: 100%;
-   
-   
-}
+
 #web-stacksimg{
+    display: flex;
     flex-wrap: wrap;
+    margin-top: 50px;
+    align-items: center;
+    gap: 10px;
+  
+
 }
 /*#web-stacksimg img:first-child {
     height: 50%;
     width: 50%;
 }*/
-#web-stacksimg img{
-    height: 100px;
-    width: 100px;
+#web-stacksimg i{
+   font-size: 32pt;
+
 }
 .hero{
     position: relative;
     display: flex;
     justify-content: center;
+  
+}
+.hero img{
+    height: 100%;
+    width:100%;
+    max-width: 100%;
+  
+
+     
 }
 #frame{
     height: 450px;
@@ -177,7 +203,38 @@ h1{
                transform: scale(1);
             }
         }
-        @keyframes typing {
+       
+.fadeIn{
+    animation: fadeIn 0.5s ease-out 2s forwards;
+    opacity: 0;
+   
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+        transform:scale(0.7);
+  }
+  100% {
+   opacity: 1;
+        transform:scale(1);
+  }
+}
+
+.typing-animation {
+  display: inline-block;
+  overflow: hidden;
+/*  border-right: 1px solid #000;*/
+  white-space: nowrap;
+  animation: typing 2s steps(40),
+            cursor .4s step-end infinite alternate;
+   animation-delay: 0s;
+   z-index: -9;
+ 
+  
+}
+
+ @keyframes typing {
   0% {
     width: 0%;
     opacity: 0;
@@ -195,18 +252,8 @@ h1{
   }
 }
 
-.typing-animation {
-  display: inline-block;
-  overflow: hidden;
-/*  border-right: 1px solid #000;*/
-  white-space: nowrap;
-  animation: typing 2s steps(40),
-            cursor .4s step-end infinite alternate;
-   animation-delay: 0s;
-   z-index: -9;
- 
-  
-}
+
+
 .cursor{
 border-bottom: 5px solid #000;
   animation: cursor .4s step-end infinite alternate;

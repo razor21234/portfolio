@@ -13,52 +13,83 @@
 </head>
 <body>
     <nav id="top-navbar" class="p-4">
-        <div> [/ RazorsPro KodeGeek]</div>
+        <div class="d-flex p-4 socmed">  
+                    <li><a><i class='fa fa-github'></i></a></li>
+                    <li><a><i class='fa fa-envelope'></i></a></li>
+                    <li><a><i class='fa fa-facebook'></i></a></li>
+                     <li><a><i class='fa fa-linkedin'></i></a></li>
+               
+        </div>
        
-         <div class="d-flex p-4">
+         <div class="d-flex p-4 links">
                     <li><a  onclick="showPage('home')">Home</a></li>
                     <li><a  onclick="showPage('about')">About</a></li>
-                    <li><a  onclick="showPage('fb')">Services</a></li>
+                   
                     <li><a  onclick="showPage('app')">Apps</a></li>
-                     <li><a  onclick="showPage('fb')">Contact</a></li>
+                  
         </div>
 
         
     </nav>
       <div class="d-flex" id="main-content">
-            <aside id="left-sidebar" class="p-4">
+           <!--  <aside id="left-sidebar" class="p-4">
             <nav>
                 <ul>
                     <li><a><i class='fa fa-github'></i></a></li>
                     <li><a><i class='fa fa-envelope'></i></a></li>
                     <li><a><i class='fa fa-facebook'></i></a></li>
+                     <li><a><i class='fa fa-linkedin'></i></a></li>
                 </ul>
             </nav>
-            </aside>
+            </aside> -->
 
             <div class="row main p-4">
-               <div class="col-lg-6 content" id="homePage">
-                <h2>Hello !, I'm Razel</h2>
+               <div class="row content" id="homePage">
+                <div class="col-lg-8"> 
+                    <h2 >Hello !, I'm Razel</h2>
                 <div class="d-flex" style="gap:20px">
                     <h1 class="cursor">></h1>
                     <h1 class="typing-animation">Web Developer..</h1></div>
                 <p>Passionate about creating dynamic web applications and modern designs using Laravel framework.</p>
                 <hr>
-                <button class="btn border"><i class="fa fa-cloud-download"></i> Download CV</button>
-                <button class="btn btn-dark text-white" onclick="showPage('tech')"><i class="fa fa-file-code-o"></i> Stacks</button>
-             
+                <button class="btn dl border"><i class="fa fa-cloud-download"></i> Download CV</button>
+                <!-- <button class="btn btn-dark text-white" onclick="showPage('tech')"><i class="fa fa-file-code-o"></i> Stacks</button> -->
+                <br>
+             <div id="web-stacksimg">
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-js"></i>
+                <i class="fa-brands fa-bootstrap"></i>
+                <i class="fa-brands fa-laravel"></i>
+                <i class="fa-brands fa-php"></i>
+                <i class="fa-brands fa-github-alt"></i>
+            </div>
+                </div> 
+
+                <div class="col-lg-4 hero">
+               <img src="assets/images/webdev.jpg" class="">
+               <!-- <div id="frame"></div> -->
+               </div>
+               
                </div>
 
-               <div class="col-lg-6 content zoomIn" id="aboutPage" style="display:none;">
-                <h1 >Hey!, glad your here.</h1>
+
+                <div class="content" id="aboutPage" style="display:none;">
+               <div class="col-lg-8">
+                <h1 class="typing-animation">Hey!, glad your here.</h1>
                  <hr>
-               <p>Hi, Im John Razel Saavedra also known as Razel, I am based in Iloilo City, Philippines.
+              <p class="fadeIn">Hi, Im John Razel Saavedra also known as Razel, I am based in Iloilo City, Philippines.
                I completed my BS degree on Information Technology last 2019. Other than that, I also take another short skill course in TESDA for Electrical Installation & Maintenance NC II. I work as IT personnel for few years but my passion in web development is always in my mind. Creating modern web design and APIs gives hapiness in me.</p>
-
+               
                </div>
+                <div class="col-lg-4 hero">
+               <img src="assets/images/me.png" class="">
+               <!-- <div id="frame"></div> -->
+               </div>
+                </div>
 
                 <div class="col-lg-6 content zoomIn" id="appPage" style="display:none;">
-                <h1 >App List</h1>
+                <h1 class="typing-animation">App List</h1>
                  <hr>
                     <div class="d-flex">
                    <div class="row" id="gallery">
@@ -90,10 +121,7 @@
                </div>
                </div>
 
-               <div class="col-lg-6 hero">
-               <img src="assets/images/me.png" class="">
-               <!-- <div id="frame"></div> -->
-               </div>
+              
 
             </div>
 
@@ -102,6 +130,35 @@
    </div>
             
 </body>
+ <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "109131865352280");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v18.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
 <script type="text/javascript">
     
         function showPage(page) {
@@ -109,7 +166,7 @@
             for (var i = 0; i < pages.length; i++) {
                 pages[i].style.display = 'none';
             }
-            document.getElementById(page + 'Page').style.display = 'block';
+            document.getElementById(page + 'Page').style.display = 'flex';
         }
     </script>
 </script>

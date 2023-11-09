@@ -38,9 +38,16 @@ overflow-x: hidden;
     height: 100vh;
     padding-left: 120px;
     padding-right: 120px;
+/*     margin-bottom: 300px;*/
+        
+
 }
 .content{
     align-items: center;
+    height: 100%;
+
+   
+
 }
 #top-navbar{
     width: 100%;
@@ -54,6 +61,8 @@ overflow-x: hidden;
     position: fixed;
     top:0;
     flex-direction: row-reverse;
+    z-index: 99999;
+
 
 /*    justify-content: space-around;*/
 
@@ -70,15 +79,29 @@ overflow-x: hidden;
     color: #fff;
 }
 
-#left-sidebar{
+/*#left-sidebar{
     height: 100%;
-/*    width: 300px;*/
+    width: 300px;
 
    
-}
+}*/
 #gallery div img{
     height: 100%;
     width: 100%;
+}
+#gallery{
+    justify-content: space-between;
+    row-gap: 50px;
+    margin-bottom: 300px;
+    
+}
+#appPage{
+    margin-top: 100px;
+    
+}
+#gallery div{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    height: 300px;
 }
 .dl:hover{
     background: orange;

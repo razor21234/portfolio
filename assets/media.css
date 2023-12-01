@@ -29,5 +29,16 @@
 		padding: 0px !important;
 		margin: 0px !important;
 	}
+	#cybercert img{
+	height: 100%;
+	width: 100%;
+}
+
+.galleryx div img{
+	width:300px;
+	max-height: 200px;
+
+	
+}
 
 }

@@ -1,0 +1,199 @@
+*{
+	color: #fff;
+}
+body{
+	background: #000 !important;
+	overflow-x: hidden;
+
+}
+.content{
+	padding-left: 50px !important;
+}
+.navbar{
+	border-bottom: 5px solid #16FF00;
+	animation: changecolor 5s ease-in-out infinite;
+
+}
+.collapse{
+	right: 0 !important;
+	margin-right: 70px;
+	position: absolute;
+}
+.main-div{
+	background: url('img/bg-1.jpg');
+	min-height: 90vh;
+	align-self: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	transition: background-image 0.3s ease;
+/*	animation: changebg 30s infinite;*/
+
+}
+/*@keyframes changebg{
+	25%,50%{
+		background: url('img/bg.jpg');
+		height: 70vh;
+	align-self: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	transition: background-image 0.3s ease;
+	}
+}*/
+.onhover{
+	height: 70%;
+	width:35%;
+	background: transparent;
+	 position: absolute;
+}
+.onhover:hover + .main-div {
+	background: url('img/bg.jpg');
+	height: 70vh;
+	align-self: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.nav-link{
+	color:#fff !important;
+}
+.btn-collapse i{
+color: #fff !important;
+
+}
+.bg-green{
+/*	background:#16FF00 !important ;*/
+background: #333;
+}
+
+#web-stacksimg i{
+	font-size: 32pt;
+	padding: 5px;
+	margin-top: 5px;
+	color: #16FF00;
+}
+#web-stacksimg i:hover{
+	color: #fff;
+}
+h1{
+    font-family: arial;
+    font-weight: bold !important;
+    font-size: 52pt !important;
+}
+
+.typing-animation {
+  display: inline-block;
+  overflow-x: hidden;
+/*  border-right: 1px solid #000;*/
+  white-space: nowrap;
+  animation: typing 2s steps(40),
+            cursor .4s step-end infinite alternate;
+   animation-delay: 0s;
+/*   z-index: 9;*/
+   color: #fff; 
+
+}
+
+ @keyframes typing {
+  0% {
+    width: 0%;
+    opacity: 0;
+   
+  }
+  1%{
+     width: 1%;
+    opacity: 1;
+  }
+  100% {
+    width: 80%;
+    opacity: 1;
+   border:0px;
+  
+
+  }
+}
+
+
+
+.cursor{
+  border-bottom: 5px solid #fff;
+  animation: cursor .4s step-end infinite alternate;
+  height: auto;
+}
+@keyframes cursor{
+    50%{
+        border-color:transparent;
+    }
+}
+.fadeIn{
+    animation: fadeIn 0.5s ease-out 1s forwards;
+    opacity: 0;
+   
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+        transform:scale(0.7);
+  }
+  100% {
+   opacity: 1;
+        transform:scale(1);
+  }
+}
+.socmed{
+	gap: 20px;
+
+}
+.socmed li{
+	list-style-type: none;
+}
+.socmed li a{
+font-size: 24pt;
+color: #fff !important;
+}
+
+#cybercert img{
+	height: 100%;
+	width: 50%;
+}
+.galleryx{
+	column-gap: 120px;
+	row-gap: 30px;
+	max-height: 450px;
+	overflow-x: hidden;
+	align-items: center;
+
+
+}
+.galleryx::-webkit-scrollbar{
+	width: 0px;
+}
+.galleryx div{
+	opacity: .8;	
+}
+.galleryx div img{
+	width:350px;
+	max-height: 200px;
+
+	
+}
+
+.galleryx div:nth-child(even){
+	transform: scale(0.8);	
+}
+
+.galleryx div:hover{
+	transform: scale(1.1);
+	opacity: 1;
+	z-index: 2;
+}
+
+
+@keyframes changecolor{
+	50%{
+		border-bottom: 5px solid orange;
+	}
+	75%{
+		border-bottom: 5px solid #610C9F;
+	}
+}

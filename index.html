@@ -1,92 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My portfilio</title>
-    <link rel="stylesheet" href="assets/css/mystyle.css">
-    <link rel="stylesheet" href="assets/css/mediascreen.css">
-    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/media.css">
+
+
      <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
 </head>
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-        <style>.whatsapp_float {
-      position: fixed;
-      width: 60px;
-      height: 60px;
-      bottom: 40px;
-      right: 40px;
-      background-color: #25d366;
-      color: #fff;
-      border-radius: 50px;
-      text-align: center;
-      font-size: 30px;
-      box-shadow: 2px 2px 3px #999;
-      z-index: 100;
-    }
-    .whatsapp-icon {
-      margin-top: 16px;
-    }
-
-    /* for mobile */
-    @media screen and (max-width: 767px){
-      .whatsapp-icon {
-        margin-top: 10px;
-      }
-      .whatsapp_float {
-        width: 40px;
-        height: 40px;
-        bottom: 20px;
-        right: 10px;
-        font-size: 22px;
-      }
-    }</style>
 <body>
-    <nav id="top-navbar" class="p-4">
-        <div class="d-flex p-4 socmed">  
-                    <li><a target="_blank" href="https://github.com/razor21234"><i class='fa fa-github'></i></a></li>
-                    <li><a target="_blank" href="mailto:johnrazelsaavedra21@gmail.com"><i class='fa fa-envelope'></i></a></li>
-                    <li><a target="_blank" href="https://www.facebook.com/johnrazel.saavedra?mibextid=ZbWKwL"><i class='fa fa-facebook'></i></a></li>
-                     <li><a target="_blank" href="https://www.linkedin.com/in/john-razel-saavedra-4b4224187"><i class='fa fa-linkedin'></i></a></li>
-               
-        </div>
-       
-         <div class="d-flex p-4 links">
-                    <li><a  onclick="showPage('home')">Home</a></li>
-                    <li><a  onclick="showPage('about')">About</a></li>
-                   
-                    <li><a  onclick="showPage('app')">Projects</a></li>
-                  
-        </div>
+	<div class="container-fluid p-0">
+	<nav class="navbar navbar-expand-lg bg-green">
+  <a class="navbar-brand text-white" href="#">RAZOR's PRO</a>
 
-        
-    </nav>
-      <div class="d-flex" id="main-content">
-         
-           <!--  <aside id="left-sidebar" class="p-4">
-            <nav>
-                <ul>
-                    <li><a><i class='fa fa-github'></i></a></li>
-                    <li><a><i class='fa fa-envelope'></i></a></li>
-                    <li><a><i class='fa fa-facebook'></i></a></li>
-                     <li><a><i class='fa fa-linkedin'></i></a></li>
-                </ul>
-            </nav>
-            </aside> -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon btn-collapse"><i class="fa-solid fa-bars"></i></span>
+  </button>
+ 
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto ">
+      <li class="nav-item active">
+        <a class="nav-link" href="#" onclick="showPage('home')">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" onclick="showPage('about')">About Me</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Certificates
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#" onclick="showPage('cybersecurity')">Cybersecurity</a>
+          <a class="dropdown-item" href="#" onclick="showPage('webdev')">Full-Stack Web Development</a>
+         <!--  <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a> -->
+        </div>
+      </li>
+      <li class="nav-item">
+         <a class="nav-link" href="#" onclick="showPage('projects')">Projects</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="onhover"></div>
+		<div class="main-div">
 
-            <div class="row main p-4">
-               <div class="row content" id="homePage">
-                <div class="col-lg-8 p-4"> 
+			<div class="container p-5">
+    <div class="row row-content">
+      <div class="col-lg-4"></div>
+      <div class="col-lg-8  content" id="home"> 
                     <h2 >Hi, I'm Razel</h2>
-                <div class="d-flex" style="gap:20px">
+                <div class="d-flex animate">
                     <h1 class="cursor">></h1>
-                    <h1 class="typing-animation">Web Developer..</h1></div>
+                    <h1 class="typing-animation">Web Developer..</h1>
+                </div>
                 <p>Passionate about creating dynamic web applications and modern designs using Laravel framework.</p>
-                <hr>
-                <button class="btn dl border" id="downloadButton"><i class="fa fa-cloud-download"></i> Download Resume</button>
+              
+                <button class="btn dl border text-white" id="downloadButton"><i class="fa fa-cloud-download"></i> Download Resume</button>
                 <!-- <button class="btn btn-dark text-white" onclick="showPage('tech')"><i class="fa fa-file-code-o"></i> Stacks</button> -->
                 <br>
              <div id="web-stacksimg">
@@ -99,125 +73,92 @@
                 <i class="fa-brands fa-github-alt"></i>
                 <i class="fa-solid fa-database"></i>
             </div>
-                </div> 
-
-                <div class="col-lg-4 p-4 hero">
-               <img src="assets/images/webdevface.png" class="robot">
-               
-
-               <img src="assets/images/hello.png" id="hello">
-               <!-- <div id="frame"></div> -->
-                <div class="hoverme">
-                Hover Me
-                </div>
-               </div>
-               
-               </div>
-
-
-                <div class="content" id="aboutPage" style="display:none;">
-               <div class="col-lg-8">
-                <h1 class="typing-animation">Hey!, glad your here.</h1>
-                 <hr>
-              <p class="fadeIn">Hi, Im John Razel Saavedra also known as Razel, I am based in Iloilo City, Philippines.
-               I completed my BS degree on Information Technology last 2019. Other than that, I also take another short skill course in TESDA for Electrical Installation & Maintenance NC II. I work as IT personnel for few years but my passion in web development is always in my mind. Creating modern web design and APIs gives hapiness in me.</p>
-               
-               </div>
-                <div class="col-lg-4 p-4 hero">
-               <img src="assets/images/me.png" class="robot">
-               <!-- <div id="frame"></div> -->
-               </div>
-                </div>
-
-                <div class="row content zoomIn" id="appPage" style="display:none;">
-                    <div class="row mt-4">
-                          <h1 class="typing-animation">My Projects</h1>
-                    <hr>
-                    </div>
-              
-                    <div class="d-flex">
-                   <div class="row" id="gallery">
-                   <div class="col-lg-5 border parentcontainer">
-                    <a href="https://wa.me/+639687741388"  target="_blank" class="whatsapp_float"><i class="fa-brands fa-whatsapp whatsapp-icon"></i></a>
-                       <a href="https://galaph.cloud/signup" target="_blank"><img src="assets/images/galaphabout.PNG" alt="galaphabout.PNGg">
-                        <div class="overlay">
-                       <h3>Capstone Project a Booking Website</h3>
-
-                        </div>
-                       </a>
-                        
-                   </div>
-                   <div class="col-lg-5 border parentcontainer">
-                       <a href="https://razor21234.github.io/portfolio/activity/activity2/" target="_blank"><img src="assets/images/act2.jpg" alt="act2.PNGg">
-                        <div class="overlay">
-                       <h3>CRUD using Javascript DOM</h3>
-
-                        </div>
-                       </a>
-                        
-                   </div>
-
-                    <div class="col-lg-5 border parentcontainer">
-                       <a href="https://razor21234.github.io/portfolio/activity/activity3/" target="_blank"><img src="assets/images/act3.jpg" alt="act3.PNGg">
-                        <div class="overlay">
-                       <h3>Simple API using Javascript</h3>
-
-                        </div>
-                       </a>
-                        
-                   </div>
-
-                   <!--  <div class="col-lg-5 border parentcontainer">
-                       <a href="https://razor21234.github.io/portfolio/activity/assignment1/" target="_blank"><img src="assets/images/ass1.jpg" alt="act3.PNGg">
-                        <div class="overlay">
-                       <h3>Mobile Responsive with css animations</h3>
-
-                        </div>
-                       </a>
-                        
-                   </div>
-
-                   <div class="col-lg-5 border parentcontainer">
-                       <a href="https://razor21234.github.io/portfolio/activity/activity1/js-arrays-multi/" target="_blank"><img src="assets/images/act1.jpg" alt="act3.PNGg">
-                        <div class="overlay">
-                       <h3>Basic Javascript</h3>
-
-                        </div>
-                       </a>
-                        
-                   </div> -->
-
-                  <!--  <div class="col-lg-4 ">
-                      <p>Galaph is developed using 
-
-                      </p>
-                   </div> -->
-                   </div>
-                    </div>
-                </div>
-
-                <!-- <div class="col-lg-6 content zoomIn" id="techPage" style="display:none;">
-                <h1>Web-Stacks</h1>
                 <hr>
-               <div id="web-stacksimg">
-                <img src="assets/images/htcsjs.png">
-                 <img src="assets/images/php.png">
-                  <img src="assets/images/laravel.png">
-                  <img src="assets/images/mysql.png">
-                  <img src="assets/images/xampp.png">
-               </div>
-               </div> -->
+                  <br><br> 
+                <h6>Connect with me :</h6>
 
+             <div class="d-flex  socmed"> 
+                    <li><a target="_blank" href="https://github.com/razor21234"><i class='fa fa-github'></i></a></li>
+                    <li><a target="_blank" href="mailto:johnrazelsaavedra21@gmail.com"><i class='fa fa-envelope'></i></a></li>
+                    <li><a target="_blank" href="https://www.facebook.com/johnrazel.saavedra?mibextid=ZbWKwL"><i class='fa fa-facebook'></i></a></li>
+                     <li><a target="_blank" href="https://www.linkedin.com/in/john-razel-saavedra-4b4224187"><i class='fa fa-linkedin'></i></a></li>
+               
+        </div>
+      </div>
+
+        <div class="col-lg-8 content" id="cybersecurity" style="display: none;">
+
+             <h1 class="typing-animation" >Cyber Security</h1>
+             <h3>Certificates</h3>
+                 <hr>
               
+                <div class="d-flex fadeIn justify-content-between">
+                <div id="cybercert">
+                  <p>MST Connect</p>
+                  <img src="assets/img/mst.png">
+                </div>
+              </div>
+      </div>
 
-            </div>
+      <div class="col-lg-8 content" id="projects" style="display: none;">
 
- 
-      
-   </div>
-            
+             <h1 class="typing-animation" >Projects</h1>
+                 <hr>
+              <div class="d-flex row galleryx">
+                <div class="col-md-4">
+                  <img src="assets/img/galaphabout.png">
+                </div>
+                 <div class="col-md-4">
+                  <img src="assets/img/act2.jpg">
+                </div>
+                 <div class="col-md-4">
+                  <img src="assets/img/act3.jpg">
+                </div>
+                
+              </div>
+                   
+              
+      </div>
+
+      <div class="col-lg-8 content" id="about" style="display: none;">
+             <h1 class="typing-animation" >Hello!,..</h1>
+                 <hr>
+              <p class="fadeIn">Im John Razel Saavedra also known as Razel, I am based in Iloilo City, Philippines.
+               I completed my BS degree on Information Technology last 2019 at Iloilo Science & Technology University. I had a 2years+ experience as a technician guy in my previous job but I left it to continue my passion in web development. Recently, I also joined bootcamps to enhance my skill and it is a great learnings for me. I love to create pretty websites and I feel confident with my skill in front-end and back-end. And yeah, I am just a normal guy playing games,having road trips and doing DIY things.
+               <br><br>
+               Here is my current Tech-Stack that I used in web development. 
+             </p>
+                <div class="d-flex fadeIn justify-content-between">
+                <ul>
+                  <li>Html</li>
+                  <li>css</li>
+                  <li>Bootstrap</li>
+                  <li>javascript</li>
+                 
+                </ul>
+                 <ul>
+                  <li>Laravel</li>
+                  <li>Codeigniter</li>
+                  <li>MySql</li>
+                   <li>php</li>
+                </ul>
+
+                 <ul>
+                  <li>VS Code</li>
+                  <li>Xampp</li>
+                  <li>Github</li>
+                </ul>
+              </div>
+      </div>
+
+    </div>
+      </div>
+		</div>
+	</div>
+
+<div class="footer"></div>
 </body>
- <div id="fb-root"></div>
+<div id="fb-root"></div>
 
     <!-- Your Chat Plugin code -->
     <div id="fb-customer-chat" class="fb-customerchat">
@@ -246,18 +187,7 @@
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
     </script>
-<script type="text/javascript">
-    
-        function showPage(page) {
-            var pages = document.getElementsByClassName('content');
-            for (var i = 0; i < pages.length; i++) {
-                pages[i].style.display = 'none';
-            }
-            document.getElementById(page + 'Page').style.display = 'flex';
-        }
-    </script>
-</script>
-  <script>
+     <script>
         document.getElementById('downloadButton').addEventListener('click', function() {
             var a = document.createElement('a');
             a.href = 'https://drive.google.com/file/d/1NRHHKqoIm18IHvMI_rPe_xn7NTU4m9vb/view?usp=sharing'; // Replace with the actual path to your resume
@@ -268,7 +198,9 @@
             document.body.removeChild(a);
         });
     </script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="assets/js/myjs.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  <script src="assets/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </html>

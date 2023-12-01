@@ -1,0 +1,20 @@
+@media (width<1024px){
+	.collapse{
+		position: relative;
+	}
+	.typing-animation{
+		font-size: 34pt !important;
+	}
+	.cursor{
+		font-size: 34pt !important;
+	}
+
+	#web-stacksimg i{
+		font-size: 22pt;
+	}
+	
+	.row-content{
+		margin-top: 50% !important
+	}
+
+}

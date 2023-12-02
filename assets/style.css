@@ -162,7 +162,7 @@ color: #fff !important;
 	max-height: 450px;
 	overflow-x: hidden;
 	align-items: center;
-	
+
 	text-align: center;
 
 
@@ -173,19 +173,17 @@ color: #fff !important;
 }
 .galleryx div{
 	opacity: .8;
-
-		
+	width:350px;
+	
 }
 .galleryx div img{
 	width:350px;
-	max-height: 200px;
+	height: 200px;
+	border: 1px solid #fff;
 
 	
 }
 
-.galleryx div:nth-child(even){
-	transform: scale(0.8);	
-}
 
 .galleryx div:hover{
 	transform: scale(1.1);
